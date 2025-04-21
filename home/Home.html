@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercearia Ferrari</title>
+    <link rel="shortcut icon" href="../images/FaviconCarrinhoVermelho.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Home/Home.html"><img src="../images/logo.png" alt="Mercearia Ferrari"></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="header-center">
+            <h1>Mercearia Ferrari</h1>
+            <nav class="menu">
+                <a href="../Home/Home.html" class="active">Home</a>
+                <a href="../ProdutosPublico/ProdutosPublico.html">Produtos</a>
+                <a href="../Contato/Contato.html">Contato</a>
+                <a href="../NossaHistoria/NossaHistoria.html">Nossa História</a>
+                <a href="../Noticias/Noticias.html">Noticias</a>
+                <div class="auth-buttons mobile">
+                    <a href="../Login/Login.html">ENTRAR</a>
+                    <a href="../Cadastro/Cadastro.html">CADASTRAR</a>
+                </div>
+            </nav>
+        </div>
+        <div class="auth-buttons desktop">
+            <a href="../Login/Login.html">ENTRAR</a>
+            <a href="../Cadastro/Cadastro.html">CADASTRAR</a>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="banner-informativo">
+            <div class="banner-texto">
+                <h2>Seja Bem-vindo(a)!</h2>
+                <p>Confira nossas ofertas e novidades da semana!<br>
+                Se atente para o Horário de funcionamento da semana santa <br>
+                Acompanhe na aba de noticias <br>
+                Tradição, qualidade e carinho desde <br> 1984. </p>
+            </div>
+            <div class="banner-imagem">
+                <img src="../images/FaixadaDaMercearia.jpg" alt="Ofertas Mercearia Ferrari">
+            </div>
+        </section>
+        
+        
+        <div class="carrossel-promocoes">
+            <!-- Radios de controle -->
+            <input type="radio" name="carousel" id="promo1" checked>
+            <input type="radio" name="carousel" id="promo2">
+            <input type="radio" name="carousel" id="promo3">
+        
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <strong>Promoções da Semana <br></strong>
+                    <img src="../images/Itaipava.png" alt="Itaipava">
+                    <div class="promo-info">
+                        <strong>3,50 R$ UN<br>473ml<br>3 UN Por 10,00 R$</strong>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <strong>Promoções da Semana <br></strong>
+                    <img src="../images/Imperio.png" alt="Império">
+                    <div class="promo-info">
+                        <strong>4,00 R$ UN<br>473ml<br>3 UN Por 11,00 R$</strong>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <strong>Promoções da Semana <br></strong>
+                    <img src="../images/Petra.png" alt="Petra">
+                    <div class="promo-info">
+                        <strong>3,50 R$ UN<br>350ml<br>3 UN Por 10,00 R$</strong>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Navegação por setas (corrigida) -->
+            <div class="carousel-nav">
+                <!-- Para o slide 1 -->
+                <label for="promo3" class="prev nav1"></label>
+                <label for="promo2" class="next nav1"></label>
+                <!-- Para o slide 2 -->
+                <label for="promo1" class="prev nav2"></label>
+                <label for="promo3" class="next nav2"></label>
+                <!-- Para o slide 3 -->
+                <label for="promo2" class="prev nav3"></label>
+                <label for="promo1" class="next nav3"></label>
+            </div>
+        
+            <!-- Indicadores (opcional) -->
+            <div class="carousel-indicators">
+                <label for="promo1"></label>
+                <label for="promo2"></label>
+                <label for="promo3"></label>
+            </div>
+        </div>
+        
+        
+        <section>
+            <div>
+                <h3>Produtos Gerais</h3>
+                <a href="../Produtos/Produtos.html" class="img-hover-zoom">
+                    <img src="../images/ProdutosDoDia.png" alt="">
+                </a>
+            </div>
+            <div>
+                <h3>Legumes e Frutas</h3>
+                <a href="../Produtos/Produtos.html" class="img-hover-zoom">
+                    <img src="../images/Frutas.png" alt="">
+                </a>
+            </div>
+            <div>
+                <h3>Verduras</h3>
+                <a href="../Produtos/Produtos.html" class="img-hover-zoom">
+                    <img src="../images/Verduras.png" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="footer-info">
+                <h3>Informações</h3>
+                <ul>
+                    <li><strong>Telefone:</strong> 35 99905-0029, 3214-7214</li>
+                    <li><strong>Horário:</strong> 8h às 20h seg a sáb, 8h às 12h dom</li>
+                    <li>
+                        <a href="../Privacidade/privacidade.html">Política de Privacidade</a> | 
+                        <a href="../Privacidade/termos.html">Termos de Uso</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-maps">
+                <div class="maps-title-and-map">
+                    <h3>Localização</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0000000000005!2d-45.431165!3d-21.551116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca928b2d89e2fd%3A0x5903a63559125668!2sMercearia%20Ferrari!5e0!3m2!1spt-BR!2sbr!4v1713123456789"
+                        width="250" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+            <section class="footer-social">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><img src="../images/icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Facebook"><img src="../images/icons8-facebook-novo.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="WhatsApp"><img src="../images/icons8-whatsapp.svg" alt="WhatsApp"></a>
+                </div>
+            </section>
+        </div>
+        <div class="footer-credit">
+            <span>&copy; 2025 Mercearia Ferrari.</span>
+            <span>@Desenvolvido e Criado por Miguel Ferrari e Rafael Ponce</span>
+        </div>
+    </footer>
+    
+</body>
+</html>

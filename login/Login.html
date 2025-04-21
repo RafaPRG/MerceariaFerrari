@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Mercearia Ferrari</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="shortcut icon" href="../images/FaviconCarrinhoVermelho.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-bg">
+        <form class="login-box">
+            <img src="../images/logo.png" alt="Mercearia Ferrari" class="login-logo">
+            
+            <div class="login-field">
+                <img src="../images/gmail.png" alt="Email" class="login-icon">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required autocomplete="username">
+            </div>
+            
+            <div class="login-field">
+                <img src="../images/senha.png" alt="Senha" class="login-icon">
+                <label for="senha">SENHA</label>
+                <input type="password" id="senha" name="senha" required autocomplete="current-password">
+            </div>
+            
+            <div class="login-options">
+                <label class="lembrar">
+                    <input type="checkbox" name="lembrar">
+                    <span class="checkmark"></span>
+                    Lembrar de mim
+                </label>
+                <a href="#" class="esqueci">Esqueceu a Senha?</a>
+            </div>
+            
+            <button type="button" class="login-btn" onclick="window.location.href='../Produtos/produtos.html'">ENTRAR</button>
+            
+            <div class="login-bottom">
+                <span>É novo por aqui? <a href="../Cadastro/Cadastro.html">Cadastre-se</a></span>
+            </div>
+            
+            <a href="javascript:history.back()" class="voltar">
+                <span class="seta">&larr;</span> Voltar
+            </a>
+        </form>
+    </div>
+</body>
+</html>
